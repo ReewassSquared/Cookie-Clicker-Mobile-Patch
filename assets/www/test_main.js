@@ -4107,6 +4107,9 @@ G.Init=function(StartLoop)
 	{
 		while (G.toastL.firstChild) G.toastL.removeChild(G.toastL.firstChild);
 	}
+//===========================================================================
+//SYNERGIES
+//===========================================================================
 	
 //===========================================================================
 //WRINKLERS
@@ -4582,6 +4585,18 @@ G.Init=function(StartLoop)
 		{
 			if (pool[i].owned) G.pool['cpsM']*=1+pool[i].power*milk;
 		}
+
+		var spool=G.upgradePools['synergiesOne'];
+		for (var i=0;i<spool.length;i++)
+		{
+			if (spool[i].owned) 
+			{
+				var amnt=G.buildings[spool[i].tpair[0]].amount;
+				G.pool['building'+spool[i].tpair[0]+'M']*=1.05*amnt;
+				var amntt=G.buildings[spool[i].tpair[1]].amount;
+				G.pool['building'+spool[i].tpair[1]+'M']*=1.001*amntt;
+			}
+		}
 		
 		var cps=0;
 		for (var i=0;i<G.buildings.length;i++)
@@ -4990,8 +5005,8 @@ G.Init=function(StartLoop)
 		10:{name:'Mooncandy',unlock:350,achievUnlock:450,iconRow:19,color:'#7e7ab9',price:			500000000000000000000},
 		11:{name:'Astrofudge',unlock:400,achievUnlock:500,iconRow:28,color:'#9a3316',price:			5000000000000000000000000},
 		12:{name:'Alabascream',unlock:450,achievUnlock:550,iconRow:30,color:'#c1a88c',price:		50000000000000000000000000000},
-		'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
-		'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},
+		/*'synergy1':{name:'Synergy I',unlock:15,iconRow:20,color:'#008595',special:1,req:'Synergies Vol. I',price:			200000},
+		'synergy2':{name:'Synergy II',unlock:75,iconRow:29,color:'#008595',special:1,req:'Synergies Vol. II',price:			200000000000},*/
 	};
 	for (var i in G.tiers){G.tiers[i].id=parseInt(i);}
 	G.getTieredIcon=function(type,tier)
@@ -5056,12 +5071,13 @@ G.Init=function(StartLoop)
 		this.desc='';
 		this.descFunc=0;
 		this.preDescFunc=0;//shown under the name and before everything else
+		this.tpair=[];
 		
 		let tie=-1;
 		if (typeof o.tie!=='undefined') {tie=o.tie;delete o.tie;}
 		
 		//transfer(this,o);
-		let props=['pool','name','id','q','desc','descFunc','icon','iconFunc','cost','order','func','costFunc','effs','power','unlockAt','tier','unimplemented'];
+		let props=['pool','name','id','q','desc','descFunc','icon','iconFunc','cost','order','func','costFunc','effs','power','unlockAt','tier','unimplemented','tpair'];
 		for (var i=0;i<props.length;i++)
 		{
 			if (o[props[i]]) this[props[i]]=o[props[i]];
@@ -5374,6 +5390,10 @@ G.Init=function(StartLoop)
 				for (var ii=0;ii<req.buildings.length;ii+=2)
 				{
 					if (req.buildings[ii].amount<req.buildings[ii+1]) break doUnlocksLoop;
+				}
+				for (var ii=0;ii<req.synergiesone.length;ii+=2)
+				{
+					if (req.buildings[ii].amount<15 && req.buildings[ii+1]<15) break doUnlocksLoop;
 				}
 				for (var ii=0;ii<req.upgrades.length;ii++)
 				{
