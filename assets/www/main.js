@@ -1764,6 +1764,7 @@ G.Init=function(StartLoop)
 			'Prism':['Solar flare','Eclipse'],
 			'Chancemaker':['Winning streak','Dry spell'],
 			'Fractal engine':['Macrocosm','Microcosm'],
+			'JS console':['200OK','403ERR'],
 		};
 		
 		for (var i=0;i<G.buildings.length;i++)

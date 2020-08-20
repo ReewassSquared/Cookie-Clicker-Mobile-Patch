@@ -198,6 +198,17 @@ G.addData(function(){
 		cps:150000000000,
 	});
 
+	new G.Building({
+		name: `JS console`,
+		id:16,
+		single:`JS console`,plural:`JS consoles`,actionName:`digitally materialized`,extraName:`[X] thread running`,extraPluaral:`[X] threads running`,
+		desc:`Programs in cookies from the digital aether.`,
+		pic:17,
+		icon:[32,0],
+		cost:3600000000000000000,
+		cps:1200000000000,
+	});
+
 	G.buildingsBN['Antimatter condenser'].style='font-size:90%;letter-spacing:-1px;';
 	
 
@@ -5137,6 +5148,162 @@ G.addData(function(){
 
 	});
 
+	new G.Upgrade({
+		name:`grandma.exe`,
+		id:591,
+		q:`An executable grandma to program in more cookies.`,
+		icon:[10,9],
+		cost:155000000000000000000,
+		order:255.522,
+		
+		pool:'grandma',
+		tie:16,tier:0,
+
+	});
+
+	new G.Upgrade({
+		name:`polymorphic structures`,
+		id:592,
+		q:`What do you mean we can't make this a Green promotion!?`,
+		icon:[32,0],
+		cost:36000000000000000000,
+		order:1301.522,
+		
+		pool:'building',
+		tie:16,tier:1,
+
+	});
+
+	new G.Upgrade({
+		name:`determinism`,
+		id:593,
+		q:`I did f(x) = x, I expect to always get x.`,
+		icon:[32,1],
+		cost:188000000000000000000,
+		order:1301.523,
+		
+		pool:'building',
+		tie:16,tier:2,
+
+	});
+
+	new G.Upgrade({
+		name:`syntactic sugar`,
+		id:594,
+		q:`baked directly into the delicious parser.`,
+		icon:[32,2],
+		cost:1880000000000000000000,
+		order:1301.524,
+		
+		pool:'building',
+		tie:16,tier:3,
+
+	});
+
+	new G.Upgrade({
+		name:`incremental design`,
+		id:595,
+		q:`I make one change, I make one patch, I make one feature, and suddenly we release a whole new version.`,
+		icon:[32,13],
+		cost:1.88e+23,
+		order:1301.525,
+		
+		pool:'building',
+		tie:16,tier:4,
+
+	});
+
+	new G.Upgrade({
+		name:`bootstrapping`,
+		id:596,
+		q:`compiles itself, then compiles itself compiling itself, only to compile itself again.`,
+		icon:[32,14],
+		cost:1.88e+25,
+		order:1301.526,
+		
+		pool:'building',
+		tie:16,tier:5,
+
+	});
+
+	new G.Upgrade({
+		name:`bytecode standards`,
+		id:597,
+		q:`We have standards, unlike you. phooie.`,
+		icon:[32,15],
+		cost:1.88e+27,
+		order:1301.527,
+		
+		pool:'building',
+		tie:16,tier:6,
+
+	});
+
+	new G.Upgrade({
+		name:`function literals`,
+		id:598,
+		q:`First class functions. But don't tell anyone they're actually closures.`,
+		icon:[32,16],
+		cost:1.88e+30,
+		order:1301.528,
+		
+		pool:'building',
+		tie:16,tier:7,
+
+	});
+
+	new G.Upgrade({
+		name:`Nested routines`,
+		id:599,
+		q:`I call myself, who calls someone else, who calls a bunch of other guys. We party like it's 2037.`,
+		icon:[32,17],
+		cost:1.88e+33,
+		order:1301.529,
+		
+		pool:'building',
+		tie:16,tier:8,
+
+	});
+
+	new G.Upgrade({
+		name:`metalanguage`,
+		id:600,
+		q:`My source code tells my program how to function. I tell my source code and compiler how to exist.`,
+		icon:[32,18],
+		cost:1.88e+36,
+		order:1301.53,
+		
+		pool:'building',
+		tie:16,tier:9,
+
+	});
+
+	new G.Upgrade({
+		name:`universal audits`,
+		id:601,
+		q:`Hey!`,
+		icon:[32,19],
+		cost:1.88e+39,
+		order:1301.531,
+		
+		pool:'building',
+		tie:16,tier:10,
+
+	});
+
+	new G.Upgrade({
+		name:`Immutability`,
+		id:602,
+		q:`...`,
+		icon:[32,28],
+		cost:1.88e+42,
+		order:1301.532,
+		
+		pool:'building',
+		tie:16,tier:11,
+
+	});
+
 	
 	new G.Upgrade({
 		name:`Reinforced index finger`,
@@ -8778,9 +8945,130 @@ G.addData(function(){
 		pool:'building',tie:15,tier:11,
 
 	});
+
+	new G.Achiev({
+		name:`kiddyscripted`,
+		id:603,
+		q:``,
+		icon:[32,0],
+		order:2201.413,
+		
+		pool:'building',tie:16,tier:1,
+
+	});
+
+	new G.Achiev({
+		name:`last-minute revisions`,
+		id:604,
+		q:``,
+		icon:[32,1],
+		order:2201.414,
+		
+		pool:'building',tie:16,tier:2,
+
+	});
+
+	new G.Achiev({
+		name:`spaghetticoded`,
+		id:605,
+		q:``,
+		icon:[32,2],
+		order:2201.415,
+		
+		pool:'building',tie:16,tier:3,
+
+	});
+
+	new G.Achiev({
+		name:`version controlled`,
+		id:606,
+		q:`but still 5 versions behind`,
+		icon:[32,13],
+		order:2201.416,
+		
+		pool:'building',tie:16,tier:4,
+
+	});
+
+	new G.Achiev({
+		name:`depcracated`,
+		id:607,
+		q:``,
+		icon:[32,14],
+		order:2201.417,
+		
+		pool:'building',tie:16,tier:5,
+
+	});
+
+	new G.Achiev({
+		name:`merged with PR`,
+		id:608,
+		q:``,
+		icon:[32,15],
+		order:2201.418,
+		
+		pool:'building',tie:16,tier:6,
+
+	});
+
+	new G.Achiev({
+		name:`open-sourced`,
+		id:609,
+		q:``,
+		icon:[32,16],
+		order:2201.419,
+		
+		pool:'building',tie:16,tier:7,
+
+	});
+
+	new G.Achiev({
+		name:`proprietarily managed`,
+		id:610,
+		q:``,
+		icon:[32,17],
+		order:2201.42,
+		
+		pool:'building',tie:16,tier:8,
+
+	});
+
+	new G.Achiev({
+		name:`3am and redbull made this possible`,
+		id:611,
+		q:``,
+		icon:[32,18],
+		order:2201.421,
+		
+		pool:'building',tie:16,tier:9,
+
+	});
+
+	new G.Achiev({
+		name:`remotely developed`,
+		id:612,
+		q:``,
+		icon:[32,19],
+		order:2201.422,
+		
+		pool:'building',tie:16,tier:10,
+
+	});
+
+	new G.Achiev({
+		name:`Rockstar`,
+		id:613,
+		q:``,
+		icon:[32,28],
+		order:2201.423,
+		
+		pool:'building',tie:16,tier:11,
+
+	});
 	
 	
-		new G.Achiev({
+	new G.Achiev({
 		name:`Click delegator`,
 		id:134,
 		q:``,
@@ -9305,6 +9593,39 @@ G.addData(function(){
 		order:2220.426,
 		
 		pool:'buildingProd',tie:15,tier:3,
+
+	});
+
+	new G.Achiev({
+		name:`I dream in code...`,
+		id:614,
+		q:``,
+		icon:[32,22],
+		order:2221.424,
+		
+		pool:'buildingProd',tie:16,tier:1,
+
+	});
+
+	new G.Achiev({
+		name:`Program immortalization`,
+		id:615,
+		q:``,
+		icon:[32,23],
+		order:2221.425,
+		
+		pool:'buildingProd',tie:16,tier:2,
+
+	});
+
+	new G.Achiev({
+		name:`Termination`,
+		id:616,
+		q:``,
+		icon:[32,24],
+		order:2221.426,
+		
+		pool:'buildingProd',tie:16,tier:3,
 
 	});
 

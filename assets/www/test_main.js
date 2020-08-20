@@ -1764,6 +1764,7 @@ G.Init=function(StartLoop)
 			'Prism':['Solar flare','Eclipse'],
 			'Chancemaker':['Winning streak','Dry spell'],
 			'Fractal engine':['Macrocosm','Microcosm'],
+			'JS console':['200OK','403'],
 		};
 		
 		for (var i=0;i<G.buildings.length;i++)
@@ -4574,6 +4575,13 @@ G.Init=function(StartLoop)
 		var prestigeMult=1+0.01*G.prestige*G.GetHeavenlyMultiplier();
 		
 		var cursedFinger=G.hasBuff('cursedFinger');
+
+		var pool=G.upgradePools['kitten'];
+		var milk=G.achievsN/25;
+		for (var i=0;i<pool.length;i++)
+		{
+			if (pool[i].owned) G.pool['cpsM']*=1+pool[i].power*milk;
+		}
 		
 		var cps=0;
 		for (var i=0;i<G.buildings.length;i++)
@@ -4582,15 +4590,8 @@ G.Init=function(StartLoop)
 			var myCps=me.cps;
 			myCps=(myCps+G.pool['building'+me.id+'A'])*G.pool['building'+me.id+'M'];
 			me.storedCps=myCps*(cursedFinger?0:1)*G.pool['cpsM']*G.pool['cpsBuffM']*prestigeMult;
-			myCps*=(me.amount+me.free);
+			myCps*=(me.amount);
 			cps+=myCps;
-		}
-		
-		var pool=G.upgradePools['kitten'];
-		var milk=G.achievsN/25;
-		for (var i=0;i<pool.length;i++)
-		{
-			if (pool[i].owned) G.pool['cpsM']*=1+pool[i].power*milk;
 		}
 		
 		var sucking=0;
