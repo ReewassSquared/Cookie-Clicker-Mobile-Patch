@@ -5071,13 +5071,12 @@ G.Init=function(StartLoop)
 		this.desc='';
 		this.descFunc=0;
 		this.preDescFunc=0;//shown under the name and before everything else
-		this.tpair=[];
 		
 		let tie=-1;
 		if (typeof o.tie!=='undefined') {tie=o.tie;delete o.tie;}
 		
 		//transfer(this,o);
-		let props=['pool','name','id','q','desc','descFunc','icon','iconFunc','cost','order','func','costFunc','effs','power','unlockAt','tier','unimplemented','tpair'];
+		let props=['pool','name','id','q','desc','descFunc','icon','iconFunc','cost','order','func','costFunc','effs','power','unlockAt','tier','unimplemented'];
 		for (var i=0;i<props.length;i++)
 		{
 			if (o[props[i]]) this[props[i]]=o[props[i]];
@@ -5390,10 +5389,6 @@ G.Init=function(StartLoop)
 				for (var ii=0;ii<req.buildings.length;ii+=2)
 				{
 					if (req.buildings[ii].amount<req.buildings[ii+1]) break doUnlocksLoop;
-				}
-				for (var ii=0;ii<req.synergiesone.length;ii+=2)
-				{
-					if (req.buildings[ii].amount<15 && req.buildings[ii+1]<15) break doUnlocksLoop;
 				}
 				for (var ii=0;ii<req.upgrades.length;ii++)
 				{
