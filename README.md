@@ -2,7 +2,7 @@
 A modified version of Orteil's Cookie Clicker android app, currently based on the alpha v6 early access version.
 
 ### DISCLAIMER
-Orteil reserves the rights and ownership of all code in this repository.
+Orteil reserves the rights and ownership of (almost) all code in this repository.
 
 ### How to Build
 1. Clone or download the repo
@@ -12,9 +12,13 @@ Orteil reserves the rights and ownership of all code in this repository.
 ### Features
 Major bug fixes:
 - Any upgrade can now be used in the permanent upgrade slots.
+- Building CPS is now correctly calculated.
+- Bug where CPS still exists after all buildings are sold (alpha only).
+
 
 Additions:
 - A wrinkler GUI in the special tab that shows how many active wrinklers you have and the number of cookies you would get from popping them. Also has a button to pop all wrinklers (it wont pop shiny wrinklers).
+- A variant of the JS console building (with flavortext based on my other works).
 
 New settings:
 - Short Numbers - Shorten big numbers using english notation (default: on)
@@ -27,7 +31,12 @@ New settings:
 
 ### Planned Features
 - Add a "Round to 3dp" setting, which would allow the user to toggle the rounding of all large numbers between 1 and 3 decimal places.
+- More prestige upgrades, including heavenly kittens and others.
+- Synergies.
+- Another tower.
+- ...and who knows what else!
 
 ### Thanks
 Thanks to Trixter for allowing this project to use code from his permanent upgrade slot bug fix patch.
 Of course, thanks to Orteil for creating this amazing game :)
+And thank you lovenox for this patch.
