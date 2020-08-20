@@ -4110,7 +4110,8 @@ G.Init=function(StartLoop)
 //===========================================================================
 //SYNERGIES
 //===========================================================================
-	
+	G.synergiesVOne={'Future almanacs':[2,11],
+		 	 'Seismic magic':[3, 7],};
 //===========================================================================
 //WRINKLERS
 //===========================================================================
@@ -4591,10 +4592,10 @@ G.Init=function(StartLoop)
 		{
 			if (spool[i].owned) 
 			{
-				var amnt=G.buildings[spool[i].tpair[0]].amount;
-				G.pool['building'+spool[i].tpair[0]+'M']*=1.05*amnt;
-				var amntt=G.buildings[spool[i].tpair[1]].amount;
-				G.pool['building'+spool[i].tpair[1]+'M']*=1.001*amntt;
+				var amnt=G.buildings[G.synergiesVOne[spool[i].name][0]].amount;
+				G.pool['building'+G.synergiesVOne[spool[i].name][0]+'M']*=1.05*amnt;
+				var amntt=G.buildings[G.synergiesVOne[spool[i].name][1]].amount;
+				G.pool['building'+G.synergiesVOne[spool[i].name][1]+'M']*=1.001*amntt;
 			}
 		}
 		

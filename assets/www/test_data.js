@@ -6426,6 +6426,162 @@ G.addData(function(){
 		cost:66024000000000,
 		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[3,15,7,15]},
 	});
+
+	new G.Upgrade({
+		name:`Quantum electronics`,
+		id:622,	
+		desc:`Factories gain <b>+5% CpS</b> per antimatter condenser. Antimatter condensers gain <b>+0.1% CpS</b> per factory.`,
+		q:`Your machines won't even be sure if they're on or off!`,
+		icon:[4,20],
+		order:622,
+		pool:'synergiesOne',
+		cost:3.4e+19,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[4,15,12,15]},
+	});
+
+	new G.Upgrade({
+		name:`Contracts from beyond`,
+		id:623,	
+		desc:`Banks gain <b>+5% CpS</b> per portal. Portals gain <b>+0.1% CpS</b> per bank.`,
+		q:`Make sure to read the fine print!`,
+		icon:[5,20],
+		order:623,
+		pool:'synergiesOne',
+		cost:200003000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[5,15,10,15]},
+	});
+
+	new G.Upgrade({
+		name:`Paganism`,
+		id:624,	
+		desc:`Temples gain <b>+5% CpS</b> per portal. Portals gain <b>+0.1% CpS</b> per temple.`,
+		q:`Some deities are better left unworshipped.`,
+		icon:[6,20],
+		order:624,
+		pool:'synergiesOne',
+		cost:200004000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[6,15,10,15]},
+	});
+
+	new G.Upgrade({
+		name:`Arcane knowledge`,
+		id:625,	
+		desc:`Wizard towers gain <b>+5% CpS</b> per alchemy lab. Alchemy labs gain <b>+0.1% CpS</b> per wizard tower.`,
+		q:`Some things were never meant to be known - only mildly speculated.`,
+		icon:[7,20],
+		order:625,
+		pool:'synergiesOne',
+		cost:15660000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[7,15,9,15]},
+	});
+
+	new G.Upgrade({
+		name:`Fossil fuels`,
+		id:626,	
+		desc:`Mines gain <b>+5% CpS</b> per shipment. Shipments gain <b>+0.1% CpS</b> per mine.`,
+		q:`Somehow better than plutonium for powering rockets. Extracted from the fuels of ancient, fossilized civilizations.`,
+		icon:[8,20],
+		order:626,
+		pool:'synergiesOne',
+		cost:1020000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[3,15,8,15]},
+	});
+
+	new G.Upgrade({
+		name:`Primordial ores`,
+		id:627,	
+		desc:`Mines gain <b>+5% CpS</b> per alchemy lab. Alchemy labs gain <b>+0.1% CpS</b> per mine.`,
+		q:`Only when refining the purest metals will you extract the sweetest sap of the earth.`,
+		icon:[9,20],
+		order:627,
+		pool:'synergiesOne',
+		cost:15000000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[3,15,9,15]},
+	});
+
+	new G.Upgrade({
+		name:`Infernal crops`,
+		id:628,	
+		desc:`Farms gain <b>+5% CpS</b> per portal. Portals gain <b>+0.1% CpS</b> per farm.`,
+		q:`Sprinkle regularly with FIRE.`,
+		icon:[10,20],
+		order:628,
+		pool:'synergiesOne',
+		cost:200000000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[2,15,10,15]},
+	});
+
+	new G.Upgrade({
+		name:`Relativistic parsec-skipping`,
+		id:629,	
+		desc:`Shipments gain <b>+5% CpS</b> per time machine. Time machines gain <b>+0.1% CpS</b> per shipment.`,
+		q:`People will tell you this isn't physically possible. These are people you don't want on your ship.`,
+		icon:[11,20],
+		order:629,
+		pool:'synergiesOne',
+		cost:2810000000000000000,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[8,15,11,15]},
+	});
+
+	new G.Upgrade({
+		name:`Extra physics funding`,
+		id:630,	
+		desc:`Banks gain <b>+5% CpS</b> per antimatter condenser. Antimatter condensers gain <b>+0.1% CpS</b> per bank.`,
+		q:`Time to put your money where your particle colliders are.`,
+		icon:[12,20],
+		order:630,
+		pool:'synergiesOne',
+		cost:3.4e+19,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[5,15,12,15]},
+	});
+
+	new G.Upgrade({
+		name:`Light magic`,
+		id:631,	
+		desc:`Wizard towers gain <b>+5% CpS</b> per prism. Prisms gain <b>+0.1% CpS</b> per wizard tower.`,
+		q:`Actually not to be taken lightly! No, I'm serious. 178 people died last year. You don't mess around with magic.`,
+		icon:[13,20],
+		order:631,
+		pool:'synergiesOne',
+		cost:4.2e+20,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[7,15,13,15]},
+	});
+
+	new G.Upgrade({
+		name:`Gemmed talismans`,
+		id:632,	
+		desc:`Mines gain <b>+5% CpS</b> per chancemaker. Chancemakers gain <b>+0.1% CpS</b> per mine.`,
+		q:`Good-luck charms covered in ancient and excruciatingly rare crystals. A must have for job interviews!`,
+		icon:[14,20],
+		order:632,
+		pool:'synergiesOne',
+		cost:5.2e+21,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[3,15,14,15]},
+	});
+
+	new G.Upgrade({
+		name:`Recursive mirrors`,
+		id:633,	
+		desc:`Prisms gain <b>+5% CpS</b> per fractal engine. Fractal engines gain <b>+0.1% CpS</b> per prism.`,
+		q:`Do you have any idea what happens when you point two of these at each other? Apparently, the universe doesn't either.`,
+		icon:[15,20],
+		order:633,
+		pool:'synergiesOne',
+		cost:6.62e+22,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[13,15,15,15]},
+	});
+
+	new G.Upgrade({
+		name:`Script grannies`,
+		id:634,	
+		desc:`Grandmas gain <b>+5% CpS</b> per JS console. JS consoles gain <b>+0.1% CpS</b> per grandma.`,
+		q:`Armies of energy drink-fueled grandmas ready to hack into the cyberspace for renegade e-cookies.`,
+		icon:[32,20],
+		order:634,
+		pool:'synergiesOne',
+		cost:1.42e+25,
+		unlockAt:{upgrades:['Synergies Vol. I'],buildings:[1,15,16,15]},
+	});
 	
 	//====== Achievements ======
 	new G.Achiev({
