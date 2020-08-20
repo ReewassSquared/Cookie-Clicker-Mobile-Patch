@@ -39,4 +39,4 @@ New settings:
 ### Thanks
 Thanks to Trixter for allowing this project to use code from his permanent upgrade slot bug fix patch.
 Of course, thanks to Orteil for creating this amazing game :)
-And thank you lovenox for this patch.
+And thank you lonevox for this patch.
